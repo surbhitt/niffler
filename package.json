@@ -1,0 +1,19 @@
+{
+  "name": "niffler",
+  "version": "1.0.0",
+  "description": "niffler",
+  "license": "MIT",
+  "author": "subzero",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^34.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "tumblr.js": "^5.0.0"
+  }
+}
