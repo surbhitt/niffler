@@ -23,4 +23,4 @@ npm run start
 ```
 
 ## Screenshots
-[screenshots](https://raw.githubusercontent.com/surbhitt/niffler/main/assets/ss.png)
+![screenshots](https://raw.githubusercontent.com/surbhitt/niffler/main/assets/ss.png)
