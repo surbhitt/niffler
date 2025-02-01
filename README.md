@@ -10,16 +10,17 @@ A view of the tumblr dashboard, in a native application window, using *electron*
 
 - Requires the following tumblr api tokens and secrets
 ```
-consumer_key
-consumer_secret
-token
-token_secret
+CONSUMER_KEY
+CONSUMER_SECRET
+TOKEN
+TOKEN_SECRET
 ```
 
 - Put the above values in a `.env`
 - Finally
 ```
-npm run start
+$ npm i
+$ npm run start
 ```
 
 ## Screenshots
