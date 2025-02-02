@@ -30,12 +30,11 @@ async function getPost(offset) {
     // only single text posts at a time
     let limit = 1
     let type = 'text'
-    
     try {
         const res = await client.userDashboard({ 
             limit, 
             type,
-            offset: 3
+            offset
         })
         return res
     } catch (error) {
@@ -48,7 +47,7 @@ async function getPost(offset) {
 app.whenReady().then(() => {
     createWindow()
 
-    ipcMain.handle('get-tumblr-post', async (limit, offset, type) => {
-        return await getPost(limit, offset, type)
+    ipcMain.handle('get-tumblr-post', async (event, offset) => {
+        return await getPost(offset)
     })
 })
