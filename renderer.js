@@ -39,18 +39,18 @@ window.onload = async () => {
 
 const prev = document.getElementById('prev');
 prev.addEventListener("click", () => {
-    console.log("Prev clicked");
-    console.log("Old offset: " + offset);
     offset = Math.max(offset - 1, 1);  // Ensure offset does not go below 1
-    console.log("New offset: " + offset);
     putPost(offset);
 });
 
 const next = document.getElementById('next');
 next.addEventListener("click", () => {
-    console.log("Next clicked");
-    console.log("Old offset: " + offset);
-    offset = offset + 1;  // Ensure offset does not go above 1000
-    console.log("New offset: " + offset);
+    offset = offset + 1;  
+    putPost(offset);
+});
+
+const random = document.getElementById('random');
+random.addEventListener("click", () => {
+    const offset = Math.floor(Math.random() * 1000) + 1;
     putPost(offset);
 });
