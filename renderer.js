@@ -1,4 +1,4 @@
-let offset;
+let offset
 
 async function putPost(offset) {
     const offsetDiv = document.getElementById('offset');
